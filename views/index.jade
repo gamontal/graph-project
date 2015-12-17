@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  script(src='/javascripts/main.js')
+  script.
+  Split(['#graph', '#editor'], { sizes: [25, 75], minSize: 200 })
+  div(id='graph')
+    canvas
+  div(id='editor')
+    textarea
